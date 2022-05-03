@@ -16,7 +16,8 @@ public class MagicStone : MonoBehaviour
     AudioSource audioSource;
 
     private int nthNumber = 0;
-    private bool isCloseEnough;
+    private bool isCloseEnough;   
+
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class MagicStone : MonoBehaviour
         //Display canvas when close enough
         float distance = Vector3.Distance(playerT.position, transform.position);
 
-        if (distance < 5)
+        if (distance < 10)
         {
             clickTo.SetActive(true);
             isCloseEnough = true;
@@ -44,7 +45,7 @@ public class MagicStone : MonoBehaviour
         {
             printFib(nthNumber); //Pass in the next number
             nthNumber++; //Add 1 to get next in sequence
-            audioSource.PlayOneShot(stoneClicked, 1f); //Play sound once clicked
+            audioSource.PlayOneShot(stoneClicked, 1f); //Play sound once clicked            
         }
     }
 
@@ -60,7 +61,7 @@ public class MagicStone : MonoBehaviour
 
         if (x == 1)
         {
-            textDisplay.SetText("" + b); //Print 2nd number on canvas
+            textDisplay.SetText("" + b); //Print 2nd number on canvas            
         }
 
 

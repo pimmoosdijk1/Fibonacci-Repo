@@ -18,6 +18,8 @@ Drag the mouse to control the camera and look around.
 You can press the 'Fibonacci button' by clicking the mouse (when in range).
 
 
+
+
 Android / Mobile (only for horizontal use):
 
 The left side of the screen works as a joystick-> Drag up and down to move front and back.
